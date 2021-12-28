@@ -1,35 +1,103 @@
-body {background-image:url(https://wallup.net/wp-content/uploads/2016/01/114353-nature-fall-road.jpg);
-     background-color: #3f51b5}
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 
-img {width:150px;
-     heigth:150px;
-     display:block;
-     margin-left: auto;
-     margin-right: auto;
-     border-radius: 100%;
-     transform:translateY(-50%);
-     border: 5px solid white}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
 
-header{background-image:url(https://wallup.net/wp-content/uploads/2016/01/114353-nature-fall-road.jpg);
-       height:80px;
-       border-radius:8px}
+body {
+  font-size: 100%;
+  background-image: url(Fundo.png);
+  background-color: black;
+}
 
-section h1{text-align: center;
-           font-size:30px}
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+}
 
-section {display:block;
-         max-width:500px;
-         margin-left: auto;
-         margin-right: auto;
-         margin-top: 100px;
-         background-color: white;
-         padding: 25px;
-         border-radius:8px;
-box-shadow: 13px 11px 23px 8px rgba(0,0,0,0.75);
--webkit-box-shadow: 13px 11px 23px 8px rgba(0,0,0,0.75);
--moz-box-shadow: 13px 11px 23px 8px rgba(0,0,0,0.75);}
+.cabecalho-imagem {
+  border-radius: 50%;
+  height: 72px;
+}
 
-div {border: 1px solid black;
-     background-color: #9e9e9e;
-     padding: 15px;
-     border-radius:8px}
+.cabecalho-menu {
+  display: flex;
+  gap: 32px;
+}
+
+.cabecalho-menu-item {
+  font-family: 'Sarala', sans-serif;
+  color: #24344b;
+  font-weight: 400;
+  font-size: 18px
+}
+
+.conteudo {
+  margin-bottom: 48px;
+  border-top: 0.4px solid #04041b;
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+  font-size: 64px;
+  color: #24344b;
+}
+
+.conteudo-principal-escrito-subtitulo {
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #24344b;
+}
+
+.conteudo-principal-escrito-botao {
+  background-color: #9db0e4;
+  width: 180px;
+  height: 60px;
+  border: none;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: 'Sarala', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #24344b;
+}
+
+.conteudo-principal-escrito-botao:hover {
+  background-color: rgba(196, 218, 236, 0.53);
+}
+
+.conteudo-principal-imagem {
+  border-radius: 100%;
+  height: 330px;
+}
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid #04041b;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #24344b;
+    text-align: center;
+}
